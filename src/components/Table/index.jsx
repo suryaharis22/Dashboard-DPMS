@@ -16,7 +16,7 @@ const DataTable = () => {
 
     const fetchData = useCallback(async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/items', {
+            const response = await axios.get('/api/items', {
                 params: {
                     page: currentPage,
                     limit: entriesPerPage,
